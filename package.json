@@ -1,0 +1,17 @@
+{
+  "name": "griffel",
+  "description": "griffel",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "0.12.x"
+  },
+  "dependencies": {
+    "express": "4.x",
+    "jade": "1.9.x",
+    "marked": "0.3.x"
+  }
+}
