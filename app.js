@@ -1,11 +1,9 @@
 var express = require('express');
 var app = express();
-var fs = require('fs');
 var async = require('async');
 var request = require('request');
 var path = require('path');
 var marked = require('marked');
-var markdown = marked(fs.readFileSync(__dirname + '/spec.md', 'utf8'));
 var session = require('express-session');
 var github = require('./util/github')((process.env.GH_HOST || null), (process.env.GH_API_PATH_PREFIX || null));
 var env = require('./util/env');
