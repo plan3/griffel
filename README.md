@@ -1,4 +1,4 @@
-# Griffel
+# Griffel :tophat:
 
 > Sort of like one of those beautiful static API documentation engines, just not very static.
 
