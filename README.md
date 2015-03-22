@@ -10,9 +10,11 @@ The idea behind everything is to store documentation close to the code (preferab
 
 1. User authenticates with his or her GitHub account...
 2. ...Griffel fetches the documentations that the user has access to from the configured GitHub repositories...
-3. ...and compiles everything into a uniformed visually appealing documentation view[1].
+3. ...and compiles everything into a uniformed visually appealing documentation view.
 
-<sub>[1]: [Example screenshot](https://github.com/tripit/slate/blob/master/README.md)</sub>
+### Demo
+
+A demo application is available on [https://griffel-demo.herokuapp.com](https://griffel-demo.herokuapp.com)
 
 ## Features
 * Super crisp UI thanks to the beautiful people over at [tripit/slate](https://github.com/tripit/slate) :bow:
