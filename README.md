@@ -1,7 +1,5 @@
 # Griffel :tophat:
 
-> Sort of like one of those beautiful static API documentation engines, just not very static.
-
 Griffel is a derivate from [tripit/slate](https://github.com/tripit/slate) with the biggest difference being that it fetches documentation markdown from GitHub repos based on whatever the user has access to.
 
 The idea behind everything is to store documentation close to the code (preferably inside the the code repositories to avoid derivation) while at the same offer a beautiful central documentation hub.
