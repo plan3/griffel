@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var github = require('./github')(process.env.GHE_HOST, process.env.GHE_API_PATH_PREFIX);
 var fs = require('fs');
 var path = require('path');
 var marked = require('marked');
