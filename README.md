@@ -6,6 +6,14 @@ Griffel is a derivate from [tripit/slate](https://github.com/tripit/slate) with 
 
 The idea behind everything is to store documentation close to the code (preferably inside the the code repositories to avoid derivation) while at the same offer a beautiful central documentation hub.
 
+## How it works
+
+1. User authenticates with his or her GitHub account...
+2. ...Griffel fetches the documentations that the user has access to from the configured GitHub repositories...
+3. ...and compiles everything into a uniformed visually appealing documentation view[1].
+
+<sub>[1]: [Example screenshot](https://github.com/tripit/slate/blob/master/README.md)</sub>
+
 ## Features
 * Super crisp UI thanks to the beautiful people over at [tripit/slate](https://github.com/tripit/slate) :bow:
 * Multi repository support, meaning that one can easily pull in API documentations from various code repositories to a central documentation hub.
