@@ -8,7 +8,7 @@ var express = require('express'),
      github = require('./util/github')((process.env.GH_HOST || null), (process.env.GH_API_PATH_PREFIX || null)),
         env = require('./util/env');
 app.use(session({
-  secret: 'keyboard cat',
+  secret: process.env.COOKIE_SECRET,
   resave: true,
   saveUninitialized: true
 }));
