@@ -1,12 +1,12 @@
-var express = require('express');
-var app = express();
-var async = require('async');
-var request = require('request');
-var path = require('path');
-var marked = require('marked');
-var session = require('express-session');
-var github = require('./util/github')((process.env.GH_HOST || null), (process.env.GH_API_PATH_PREFIX || null));
-var env = require('./util/env');
+var express = require('express'),
+        app = express(),
+      async = require('async'),
+    request = require('request'),
+       path = require('path'),
+     marked = require('marked'),
+    session = require('express-session'),
+     github = require('./util/github')((process.env.GH_HOST || null), (process.env.GH_API_PATH_PREFIX || null)),
+        env = require('./util/env');
 app.use(session({
   secret: 'keyboard cat',
   resave: true,
