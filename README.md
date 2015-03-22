@@ -7,7 +7,7 @@ Griffel is a derivate from [tripit/slate](https://github.com/tripit/slate) with 
 The idea behind everything is to store documentation close to the code (preferably inside the the code repositories to avoid derivation) while at the same offer a beautiful central documentation hub.
 
 ## Features
-* Super crisp UI thanks to the beautiful people over at [tripit/slate](https://github.com/tripit/slate).
+* Super crisp UI thanks to the beautiful people over at [tripit/slate](https://github.com/tripit/slate) :bow:
 * Multi repository support, meaning that one can easily pull in API documentations from various code repositories to a central documentation hub.
 * Documentation written in Markdown.
 * Per-user access control. Users will only see documentation for the repositories he or she has access to.
@@ -53,6 +53,10 @@ or if you're into [Heroku](http://heroku.com) and [foreman](https://github.com/d
 ```
 $ foreman start
 ```
+
+## Contribute
+
+Pull requests are always welcome :beers:
 
 ## Credits
 * [tripit/slate](https://github.com/tripit/slate) :heart:
