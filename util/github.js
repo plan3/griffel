@@ -8,8 +8,8 @@ module.exports = function(host, pathPrefix) {
     var c = new GitHubApi({
       version: '3.0.0',
       protocol: 'https',
-      host: host || null,
-      pathPrefix: pathPrefix || null
+      host: host,
+      pathPrefix: pathPrefix
     });
     c.authenticate({
       type: 'oauth',

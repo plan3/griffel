@@ -1,8 +1,8 @@
-module.exports = function(app, github, request, githubHost, githubClientId, githubClientSecret, callbackUrl) {
+module.exports = function(app, request, githubHost, githubClientId, githubClientSecret, callbackUrl) {
 
   app.get('/auth/sign-in', function(req, res) {
     res.redirect('https://'
-      + (githubHost || 'github.com')
+      + githubHost
       + '/login/oauth/authorize?client_id=' + githubClientId
       + '&redirect_uri=' + callbackUrl
       + '&scope=repo');
@@ -20,7 +20,7 @@ module.exports = function(app, github, request, githubHost, githubClientId, gith
         client_secret: githubClientSecret,
         code: req.query.code
       };
-      request.post({url: 'https://' + (githubHost || 'github.com') + '/login/oauth/access_token', json: params}, function(err, result, body) {
+      request.post({url: 'https://' + githubHost + '/login/oauth/access_token', json: params}, function(err, result, body) {
         if(body && body.access_token) {
           req.session.token = body.access_token;
           res.redirect('/');
