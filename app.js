@@ -1,5 +1,6 @@
 var express = require('express'),
         app = express(),
+       sass = require('node-sass-middleware'),
       async = require('async'),
     request = require('request'),
        path = require('path'),
@@ -11,6 +12,11 @@ app.use(session({
   secret: process.env.COOKIE_SECRET,
   resave: true,
   saveUninitialized: true
+}));
+app.use(sass({
+  src: path.join(__dirname, 'public'),
+  dest: path.join(__dirname, 'public'),
+  outputStyle: 'compressed'
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(function(err, req, res, next) {
