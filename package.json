@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "4.x",
     "jade": "1.9.x",
+    "node-sass-middleware": "0.5.x",
     "marked": "0.3.x",
     "github": "0.2.x",
     "request": "2.x",
