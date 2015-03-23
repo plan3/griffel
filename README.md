@@ -37,20 +37,20 @@ $ npm install
 Griffel is [Twelve-factor](http://12factor.net) compatible and therefore reads its [configuration from the environment](http://12factor.net/config).
 
 #### Required variables
-* `COOKIE_SECRET` - Used to sign session cookies
-* `GH_CALLBACK_URL` - GitHub callback URL used during authentication
-	* Example: `http://example.com/auth/callback`
-* `GH_CLIENT_ID` - A client ID for your GitHub Application
-	* Wat? Have a look at [Basics of Authentication](https://developer.github.com/guides/basics-of-authentication/)
-* `GH_CLIENT_SECRET` - A client secret for your GitHub Application
-* `GH_REPOS` - A comma separated list with the repos that we're gonna fetch documentation
-	* Example: `hnrc/griffel-demo-kittn,hnrc/griffel-demo-doges`
+* `COOKIE_SECRET` - Used to sign session cookies.
+* `GH_CALLBACK_URL` - GitHub callback URL used during authentication.
+    * Example: `http://example.com/auth/callback`
+* `GH_CLIENT_ID` - A client ID for your GitHub Application.
+    * Wat? Have a look at [Basics of Authentication](https://developer.github.com/guides/basics-of-authentication/)
+* `GH_CLIENT_SECRET` - A client secret for your GitHub Application.
+* `GH_REPOS` - A comma separated list with repos to fetch documentation from.
+    * Example: `hnrc/griffel-demo-kittn,hnrc/griffel-demo-doges`
 
 #### Optional variables
 * `DOC_PATH` - A path to wherever you've placed your documentation markdown. (Default: `api-spec.md`)
 * `ACCESS_PRIVATE_REPOS` - Set to an arbitrary value to access private repositories.
-* `GH_HOST` - The host to your GitHub instance if your running GitHub Enterprise
-* `GH_API_PATH_PREFIX` - Something like `/api/v3` is usually needed for GitHub Enterprise
+* `GH_HOST` - The hostname of your GitHub instance if you're running GitHub Enterprise.
+* `GH_API_PATH_PREFIX` - Something like `/api/v3` is usually needed for GitHub Enterprise installations.
 
 ### Fire up the engine
 ```
