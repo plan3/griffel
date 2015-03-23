@@ -48,7 +48,7 @@ Griffel is [Twelve-factor](http://12factor.net) compatible and therefore reads i
 
 #### Optional variables
 * `DOC_PATH` - A path to wherever you've placed your documentation markdown. (Default: `api-spec.md`)
-* `ACCESS_PRIVATE_REPOS` - Set to an arbitrary value to access private repositories. (Default: `false`)
+* `ACCESS_PRIVATE_REPOS` - Set to an arbitrary value to access private repositories.
 * `GH_HOST` - The host to your GitHub instance if your running GitHub Enterprise
 * `GH_API_PATH_PREFIX` - Something like `/api/v3` is usually needed for GitHub Enterprise
 
