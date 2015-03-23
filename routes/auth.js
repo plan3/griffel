@@ -1,11 +1,11 @@
-module.exports = function(app, request, githubHost, githubClientId, githubClientSecret, callbackUrl) {
+module.exports = function(app, request, githubHost, githubClientId, githubClientSecret, callbackUrl, accessPrivateRepos) {
 
   app.get('/auth/sign-in', function(req, res) {
     res.redirect('https://'
       + githubHost
       + '/login/oauth/authorize?client_id=' + githubClientId
       + '&redirect_uri=' + callbackUrl
-      + '&scope=repo');
+      + (accessPrivateRepos ? '&scope=repo' : ''));
   });
 
   app.get('/auth/sign-out', function(req, res) {
