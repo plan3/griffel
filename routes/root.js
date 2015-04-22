@@ -1,10 +1,10 @@
-module.exports = function(app, github, marked, async, repos, docPath) {
+module.exports = function(app, github, marked, async, repos, path) {
 
   app.get('/', function(req, res) {
     if(req.session && req.session.token) {
       var gh = github.client(req.session.token);
       async.map(repos, function(repo, callback) {
-        gh.repos.getContent({user: repo.user, repo: repo.repo, path: docPath}, function(err, content) {
+        gh.repos.getContent({user: repo.user, repo: repo.repo, ref: req.query.ref ? req.query.ref : 'master', path: path}, function(err, content) {
           if(err) {
             console.log(err);
             callback(null, null);
