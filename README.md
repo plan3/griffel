@@ -30,7 +30,7 @@ Griffel is designed to run on [Heroku](http://heroku.com) but can easily be depl
 
 ### Get the good stuff
 ```
-$ git clone git://github.com/hnrc/griffel.git
+$ git clone git://github.com/plan3/griffel.git
 $ cd griffel
 $ npm install
 ```
