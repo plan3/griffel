@@ -9,12 +9,17 @@ module.exports = function(app, github, marked, async, repos, path) {
             console.log(err);
             callback(null, null);
           } else {
-            callback(null, new Buffer(content.content, content.encoding).toString('utf-8'));
+            try {
+              callback(null, new Buffer(content.content, content.encoding).toString('utf-8'));
+            } catch(err) {
+              console.error(err);
+              callback(null, null);
+            }
           }
         });
       }, function(err, results) {
         if(err) {
-          console.log(err);
+          console.error(err);
         }
         if(results) {
           res.render('layout', {content: marked(results.join('\n'))});
