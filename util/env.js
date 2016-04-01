@@ -1,6 +1,6 @@
 this.parse = function(s) {
   return s.split(',').map(function(val) {
-    var kv = val.split('/').map(function(kv) { return kv; });
+    var kv = val.split(':').map(function(kv) { return kv; });
     if(kv.length == 2) {
       return {
         user: kv[0].trim(),

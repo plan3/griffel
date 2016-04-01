@@ -4,7 +4,13 @@ module.exports = function(app, github, marked, async, repos, path) {
     if(req.session && req.session.token) {
       var gh = github.client(req.session.token);
       async.map(repos, function(repo, callback) {
-        gh.repos.getContent({user: repo.user, repo: repo.repo, ref: req.query.ref ? req.query.ref : 'master', path: path}, function(err, content) {
+        var repoParts = repo.repo.split("/");
+        var repoName = repoParts[0];
+        repoParts.splice(0,1);
+        repoParts.push(path);
+        var docPath = repoParts.join("/");
+
+        gh.repos.getContent({user: repo.user, repo: repoName, ref: req.query.ref ? req.query.ref : 'master', path: docPath}, function(err, content) {
           if(err) {
             console.log(err);
             callback(null, null);
