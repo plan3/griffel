@@ -46,7 +46,7 @@ Griffel is [Twelve-factor](http://12factor.net) compatible and therefore reads i
     * Wat? Have a look at [Basics of Authentication](https://developer.github.com/guides/basics-of-authentication/)
 * `GH_CLIENT_SECRET` - A client secret for your GitHub Application.
 * `GH_REPOS` - A comma separated list with repos to fetch documentation from.
-    * Example: `hnrc/griffel-demo-kittn,hnrc/griffel-demo-doges`
+    * Example: `hnrc:griffel-demo-kittn,hnrc:griffel-demo-doges`
 
 #### Optional variables
 * `DOC_PATH` - A path to wherever you've placed your documentation markdown. (Default: `api-spec.md`)
