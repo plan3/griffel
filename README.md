@@ -10,12 +10,6 @@ The idea behind everything is to store documentation close to the code (preferab
 2. ...Griffel fetches the documentations that the user has access to from the configured GitHub repositories...
 3. ...and compiles everything into a uniformed visually appealing documentation view.
 
-### Demo
-
-A demo application is available on [https://griffel-demo.herokuapp.com](https://griffel-demo.herokuapp.com)
-
-*(It's configured to fetch documentation from [hnrc/griffel-demo-doges](https://github.com/hnrc/griffel-demo-doges) and [hnrc/griffel-demo-kittn](https://github.com/hnrc/griffel-demo-kittn))*
-
 ## Features
 * Super crisp UI thanks to the beautiful people over at [tripit/slate](https://github.com/tripit/slate) :bow:
 * Multi repository support, meaning that one can easily pull in API documentations from various code repositories to a central documentation hub.
